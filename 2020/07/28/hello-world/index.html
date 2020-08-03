@@ -24,12 +24,12 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://yoursite.com/2020/07/28/hello-world/index.html">
-<meta property="og:site_name" content="杰哥不要呀">
+<meta property="og:site_name" content="Long&#39;s Blog">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-28T08:58:20.590Z">
 <meta property="article:modified_time" content="2020-07-30T09:23:45.770Z">
-<meta property="article:author" content="龙文浩">
+<meta property="article:author" content="longwenhao">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://yoursite.com/2020/07/28/hello-world/">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Hello World | 杰哥不要呀</title>
+  <title>Hello World | Long's Blog</title>
   
 
 
@@ -76,7 +76,7 @@
   </style>
 </noscript>
 
-  
+  <link rel="stylesheet" href="/live2d/css/live2d.css" />
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -97,7 +97,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">杰哥不要呀</h1>
+      <h1 class="site-title">Long's Blog</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -193,12 +193,12 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="龙文浩">
+      <meta itemprop="name" content="longwenhao">
       <meta itemprop="description" content="">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杰哥不要呀">
+      <meta itemprop="name" content="Long's Blog">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -283,12 +283,12 @@
   <div id="qr" style="display: none;">
       
       <div style="display: inline-block;">
-        <img src="/images/wechatpay.png" alt="龙文浩 微信支付">
+        <img src="/images/wechatpay.png" alt="longwenhao 微信支付">
         <p>微信支付</p>
       </div>
       
       <div style="display: inline-block;">
-        <img src="/images/alipay.png" alt="龙文浩 支付宝">
+        <img src="/images/alipay.png" alt="longwenhao 支付宝">
         <p>支付宝</p>
       </div>
 
@@ -392,9 +392,9 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="龙文浩"
+    <img class="site-author-image" itemprop="image" alt="longwenhao"
       src="/images/avatar.gif">
-  <p class="site-author-name" itemprop="name">龙文浩</p>
+  <p class="site-author-name" itemprop="name">longwenhao</p>
   <div class="site-description" itemprop="description"></div>
 </div>
 <div class="site-state-wrap motion-element">
@@ -454,10 +454,8 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">龙文浩</span>
+  <span class="author" itemprop="copyrightHolder">longwenhao</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
 
         
 <div class="busuanzi-count">
@@ -489,6 +487,23 @@
 
 
       </div>
+	  <div id="landlord">
+    <div class="message" style="opacity:0"></div>
+    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    <div class="hide-button">隐藏</div>
+	</div>
+
+	<script type="text/javascript">
+		var message_Path = '/live2d/'
+		var home_Path = 'https://wenhaoLong.github.io/'  //此处修改为你的域名
+	</script>
+
+	<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+	<script type="text/javascript" src="/live2d/js/message.js"></script>
+	<script type="text/javascript">
+		loadlive2d("live2d", "/live2d/model/tia/model.json");  //此处为你是用的模型文件，可以修改
+	</script>
+
     </footer>
   </div>
 
@@ -573,5 +588,5 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
   
   
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
